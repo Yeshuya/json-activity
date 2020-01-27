@@ -1,5 +1,5 @@
 <?php
-$json = file_get_contents('http://localhost/json-activity/json.php');
+$json = file_get_contents('http://localhost/json-activity/json-1.php');
 
 $data = json_decode($json,true);
 
