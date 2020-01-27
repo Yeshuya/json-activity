@@ -1,10 +1,9 @@
 <?php
-$json = file_get_contents('http://localhost/json/json-1.php');
+$json = file_get_contents('http://dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com/json-activity/json-1.php');
 
 $data = json_decode($json,true);
 
-$list = $data['stocks'][1];
-//$list = $data['stocks'][0]['sto_name'];
+$list = $data['articles'][1];
 
 //var_dump($data);
 //echo "<pre>";
