@@ -1,5 +1,5 @@
 <?php
-$json = file_get_contents('http://dbrojasdev.cjw42bnplsor.us-east-1.rds.amazonaws.com/json-activity/json-1.php');
+$json = file_get_contents('http://localhost/json-activity/json-1.php');
 
 $data = json_decode($json,true);
 $list = $data['articles'][1];
