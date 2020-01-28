@@ -11,7 +11,7 @@ class Articles{
 	}
 	
 	public function get_articles(){
-		$sql = "SELECT * FROM tbl_artcles";
+		$sql = "SELECT * FROM tbl_articles";
 		$result = mysqli_query($this->db,$sql);
 		while($row = mysqli_fetch_assoc($result)){
 			$list[] = $row;
