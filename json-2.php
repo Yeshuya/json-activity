@@ -5,11 +5,14 @@ $data = json_decode($json,true);
 $list = $data['articles'][1];
 
 foreach($list as $value){
-  echo $value['article_id'];
-  echo $value['article_title'];
-  echo $value['description'];
-  echo $value['author'];
-  echo $value['date_created'];
+?>
+<ul>
+  <li> <?php echo $value['article_id'];?> </li>
+  <li> <?php echo $value['article_title'];?> </li>
+  <li> <?php echo $value['description'];?> </li>
+  <li> <?php echo $value['author'];?> </li>
+  <li> <?php echo $value['date_created'];?> </li>
+</ul>
+<?php
 }
-
 ?>
