@@ -1,5 +1,5 @@
 <?php
 
-header("location: json-2.php");
+header("location: json-1.php");
 
 ?>
