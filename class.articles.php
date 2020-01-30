@@ -8,7 +8,6 @@ class Articles{
 			echo "Database connection error.";
 			exit;
 		}else {
-			echo "Database Connect!";
 		}
 	}
 	
